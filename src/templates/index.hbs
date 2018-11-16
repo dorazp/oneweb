@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8"> 
+  <!--允许全屏--> 
+  <meta content="yes" name="apple-mobile-web-app-capable"> 
+  <meta content="yes" name="apple-touch-fullscreen"> 
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">  
+  <title>再分享</title> 
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body class="wp">
+    {{> header}}
+    {{!-- {{import './src/templates/module/arrow-r.hbs'}} --}}
+    <div class="share-container">
+        <span class="cmlogo">
+            <img src="../../images/ico/ydlogo.png" />
+        </span>
+        {{!-- 中国移动数字体验中心 --}}
+        <div class="sharetag">
+            <p>
+                <span class="arrow arrow-l"></span>
+                <span class="arrow arrow-r"></span>
+                中国移动数字体验中心
+            </p>
+        </div>
+        {{!-- map --}}
+        <div class="sharemap">
+            <p><em></em>北京市东城区东直门南大街</p>
+        </div>
+        {{!-- 分享邀约参观 --}}
+        <div class="shareyuyue">
+            <span>分享邀约参观</span>
+        </div>
+        {{!-- code --}}
+        <div class="sharecode">
+            <span><img src="../../images/ico/code.png" /></span>
+        </div>
+        {{!-- footer --}}
+        <div class="sharefooter">
+            <span></span>
+        </div>
+    </div>
+    
+</body>
+</html>

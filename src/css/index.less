@@ -1,0 +1,72 @@
+/*公共*/
+@import "module/reset";
+@import "module/global";
+/**/
+@import "module/header";
+@import "module/footer";
+
+/*bg*/
+body{.pr;}
+.share-container{
+	color:#fff;.size(100%,100vh);.pr;background:url(../images/ico/share-bg1.jpg) left 44px no-repeat;background-size: 100% auto;
+	.cmlogo{
+		.dbi;.pa;.size(160px/2,50px/2);.lt(20px,64px);
+		img{.full;}
+	}
+	.sharetag{
+		.x;.bold;.db;.fzlh(18px,40px,auto);.w(100%);.clip;
+		p{
+			.dbi;.pr;.m(t,240px);
+			.arrow{
+				.db;.ct(y,11px);.size(20px,11px);
+				background:url(../images/ico/arrow-l.png) center center no-repeat;
+				background-size: 100% auto;
+				&.arrow-l{
+					left:-30px;
+				}
+				&.arrow-r{
+					right:-30px;
+					background-image:url(../images/ico/arrow-r.png);
+				}
+			}
+		}
+	}
+	.sharemap{
+		.x;.clip;
+		p{
+			.dbi;.fzlh(12px,30px);.pr;.indent(16px);
+		}
+		em{
+			.size(11px,30px);.dbi;background:url(../images/ico/site.png) center center no-repeat;
+			background-size: 100% auto;.ct(y,30px);left:0;
+		}
+	}
+	.shareyuyue{
+		font-size: 15px;.w(100%);.h(90px);.clip;line-height: 92px;
+		background:url(../images/ico/yybtn.png) center center no-repeat;
+		background-size: 100% auto;
+		span{
+			.db;text-shadow: 0 2px 3px rgba(0,0,0,0.5);.x;
+		}
+	}
+	.sharecode{
+		.size(172px/2,172px/2);.auto(x);.p(o,28px);
+		background:url(../images/ico/codebox.png) center center no-repeat;
+		background-size: 100% auto;
+		span{
+			.size(172px/2,172px/2);.db;
+			img{.size(172px/2,172px/2);}
+		}
+	}
+	.sharecode,.shareyuyue,.sharemap.sharetag{.pr;.z(2);}
+	.sharefooter{
+		.size(100%,233px);position: fixed;left:0;bottom:0;
+		background:url(../images/ico/share-bg-footer.png) center bottom no-repeat;
+		background-size: 100% auto;
+		span{
+			.size(100%,263px/2);position: fixed;left:0;bottom:0;
+			background:url(../images/ico/ico.png) center bottom no-repeat;
+			background-size: 100% auto;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "static-starter",
+  "description": "A template for static HTML pages that are styled with LESS",
+  "scripts": {
+    "start": "./node_modules/gulp/bin/gulp.js",
+    "build": "./node_modules/gulp/bin/gulp.js NODE_ENV=production"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-hb": "^6.0.2",
+    "gulp-if": "^1.2.5",
+    "gulp-less": "^3.0.3",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "handlebars-helper-import": "^2.4.0",
+    "handlebars-helper-repeat": "*"
+  },
+  "license": "MIT",
+  "dependencies": {
+    
+  }
+}
