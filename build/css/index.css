@@ -236,8 +236,7 @@ body {
 }
 .ua-ie9 .mask,
 .ua-ie9 .e-mask {
-  -webkit-filter: none !important;
-          filter: none !important;
+  filter: none !important;
 }
 .none {
   display: none;

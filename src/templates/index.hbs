@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-  <meta charset="utf-8"> 
-  <!--允许全屏--> 
-  <meta content="yes" name="apple-mobile-web-app-capable"> 
-  <meta content="yes" name="apple-touch-fullscreen"> 
-  <meta content="telephone=no,email=no" name="format-detection">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">  
-  <title>再分享</title> 
+<head>
+    <meta charset="utf-8">
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>再分享</title>
     <link rel="stylesheet" href="../css/index.css">
+    <script>
+        (function (doc, win) {
+            try {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window
+                        ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = clientWidth / 10 + 'px';
+                    };
+                recalc();
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            }
+            catch (e) { }
+        })(document, window);
+    </script>
 </head>
+
 <body class="wp">
     {{> header}}
     {{!-- {{import './src/templates/module/arrow-r.hbs'}} --}}
@@ -42,6 +62,7 @@
             <span></span>
         </div>
     </div>
-    
+
 </body>
+
 </html>
