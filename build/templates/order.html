@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>微信预约</title>
+    <link rel="stylesheet" href="../css/order.css">
+    <script>
+        (function (doc, win) {
+            try {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window
+                        ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = clientWidth / 10 + 'px';
+                    };
+                recalc();
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            }
+            catch (e) { }
+        })(document, window);
+    </script>
+</head>
+
+<body class="wp">
+    <div class="m-header">
+        <p class="lcon"><em></em><span>参观地址</span></p>
+    </div>    <div class="order-container">
+        <div class="form-hd">
+            <div class="dots left"></div>
+            <div class="t1">参观预约</div>
+            <div class="dots right"></div>
+        </div>
+        <div class="form-bd user">
+            <div class="hd">客户信息</div>
+            <div class="form-row">
+                <input class="company" name="company" type="text" placeholder="公司名称"/>
+            </div>
+            <div class="form-row">
+                <input class="industry" name="industry" type="text" placeholder="所属行业"/>
+            </div>
+            <div class="form-row">
+                <input class="name"  name="name" type="text" placeholder="客户姓名"/>
+            </div>
+            <div class="form-row">
+                <input class="mobile"  name="mobile" type="text" placeholder="客户电话"/>
+            </div>
+            <div class="form-row">
+                <input class="job"  name="job" type="text" placeholder="客户职位"/>
+            </div>
+        </div>
+        <div class="form-bd info">
+            <div class="hd">参观信息</div>
+            <div class="form-row">
+                <input class="date" name="company" type="date" placeholder="参观日期"/>
+            </div>
+            <div class="form-row">
+                <input class="turn" name="turn" type="text" placeholder="参观场次"/>
+            </div>
+            <div class="form-row">
+                <input class="num"  name="num" type="number" placeholder="参观人数"/>
+            </div>
+            <div class="form-row">
+                <textarea class="goal"  name="goal" placeholder="参观目的"></textarea>
+            </div>
+        </div>
+
+
+        <div class="form-ft">
+            <div class="order-now">提交预约</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

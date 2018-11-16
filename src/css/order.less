@@ -1,0 +1,55 @@
+/*公共*/
+@import "module/reset";
+@import "module/global";
+/**/
+@import "module/header";
+@import "module/footer";
+
+/*bg*/
+body{.pr;}
+.order-container{
+    color:#fff;.size(100%,100vh);.pr;
+    background:url(../images/order/order-bg1.jpg) center no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    padding-top: 22px;
+    .form-row {
+        margin-bottom: 10px;
+        input {
+            text-align: left;
+            height: 30px;
+            line-height: 30px;
+            width: 300px;
+            padding-left: 10px;
+            outline: none;
+        }
+
+        textarea {
+            height: 90px;
+            line-height: 30px;
+            width: 300px;
+            padding-left: 10px;
+            outline: none;
+        }
+    }
+
+    .form-bd {
+        .hd {
+            margin: 30px 0 10px;
+        }
+    }
+
+    .form-ft {
+        text-align: center;
+        .order-now {
+            background: rgb(106, 130, 236);
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            height: 40px;
+            line-height: 40px;
+            width: 320px;
+            margin: 0 auto;
+        }
+    }
+}
