@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8"> 
+  <!--允许全屏--> 
+  <meta content="yes" name="apple-mobile-web-app-capable"> 
+  <meta content="yes" name="apple-touch-fullscreen"> 
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">  
+  <title>预约</title> 
+    <link rel="stylesheet" href="../css/index.css">
+    <script>
+        (function (doc, win) {
+            try {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window
+                        ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = clientWidth / 10 + 'px';
+                    };
+                recalc();
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            }
+            catch (e) { }
+        })(document, window);
+    </script>
+</head>
+<body class="wp">
+    <div class="m-header">
+        <p class="lcon"><em></em><span>参观地址</span></p>
+    </div>    <div class="yy-container">
+        <p class="bgheader"></p>
+        <div class="yy-title">
+            <p>
+                <span class="arrow arrow-l"></span>
+                <span class="arrow arrow-r"></span>
+                参观预约
+            </p>
+        </div>
+        <div class="form-main">
+            <div class="form-box">
+                <p class="form-title"><em></em>客户信息</p>
+                <div class="form-input">
+                    <p class="input-wp">
+                        <input type="text" name="" placeholder="公司名称">
+                    </p>
+                    <p class="input-wp">
+                        <input type="text" name="" placeholder="所属行业">
+                    </p>
+                    <p class="input-wp">
+                        <input type="text" name="" placeholder="客户姓名">
+                    </p>
+                    <p class="input-wp">
+                        <input type="text" name="" placeholder="客户电话">
+                    </p>
+                    <p class="input-wp">
+                        <input type="text" name="" placeholder="客户职位">
+                    </p>
+                </div>
+            </div>
+            <div class="form-box">
+                <p class="form-title"><em></em>参观信息</p>
+                <div class="form-input">
+                    <p class="input-wp">
+                        <input type="text" name="" placeholder="参观日期">
+                    </p>
+                    <p class="input-wp">
+                        <input type="text" name="" placeholder="参观场次">
+                    </p>
+                    <p class="input-wp">
+                        <input type="text" name="" placeholder="参观人数">
+                    </p>
+                    <p class="input-wp textarea-wp">
+                        <textarea type="text" placeholder="参观目的"></textarea>
+                    </p>
+                </div>
+            </div>
+            <div class="form-btn">
+                <a href="#" class="btn">提交预约</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

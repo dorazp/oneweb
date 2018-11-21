@@ -8,15 +8,20 @@
 /*bg*/
 body{.pr;}
 .share-container{
-	color:#fff;.size(100%,100vh);.pr;background:url(../images/ico/share-bg1.jpg) left 44px no-repeat;background-size: 100% auto;
+	color:#fff;.size(100%,100vh);.pr;background:url(../images/ico/share-bg1.jpg) center 44px no-repeat;background-size: 100% auto;
 	.cmlogo{
 		.dbi;.pa;.size(160px/2,50px/2);.lt(20px,64px);
 		img{.full;}
 	}
+	.sharetil{
+		.w(100%);.h(235px);
+		background:url(../images/ico/indextil.png) center bottom no-repeat;
+		background-size: 100% auto;
+	}
 	.sharetag{
 		.x;.bold;.db;.fzlh(18px,40px,auto);.w(100%);.clip;
 		p{
-			.dbi;.pr;.m(t,240px);
+			.dbi;.pr;
 			.arrow{
 				.db;.ct(y,11px);.size(20px,11px);
 				background:url(../images/ico/arrow-l.png) center center no-repeat;
@@ -67,6 +72,91 @@ body{.pr;}
 			.size(100%,263px/2);position: fixed;left:0;bottom:0;
 			background:url(../images/ico/ico.png) center bottom no-repeat;
 			background-size: 100% auto;
+		}
+	}
+}
+/*预约*/
+@-webkit-keyframes fadeIn1 {
+0% {
+opacity: 0.5; /*初始状态 透明度为0*/
+}
+50% {
+opacity: 1; /*中间状态 透明度为0*/
+}
+100% {
+opacity: 0.5; /*结尾状态 透明度为1*/
+}
+}
+.yy-container{
+	background:url(../images/ico/yy-bg1.jpg) center bottom no-repeat;
+	background-size: 100% auto;color:#fff;.size(100%,100vh);.pr;
+	.bgheader{
+		.pa;.lt(0);right:0;.size(100%,577px/2);.z(1);
+		background:url(../images/ico/yy-topbg.png) center top no-repeat;
+		background-size: 100% auto;
+		-webkit-animation-name: fadeIn1; /*动画名称*/
+		-webkit-animation-duration: 3s; /*动画持续时间*/
+		-webkit-animation-iteration-count:infinite; /*动画次数*/
+		-webkit-animation-delay: 0s; /*延迟时间*/
+	}
+	.yy-title{
+		.x;.bold;.db;.fzlh(24px,40px,auto);.w(100%);.clip;color:#fff;.pr;.z(2);
+		p{
+			.dbi;.pr;.m(t,75px);
+			.arrow{
+				.db;.ct(y,8px);.size(20px,8px);
+				background:url(../images/ico/yyico.png) center center no-repeat;
+				background-size: 100% auto;
+				&.arrow-l{
+					left:-30px;
+				}
+				&.arrow-r{
+					right:-30px;
+					background-image:url(../images/ico/yyico1.png);
+				}
+			}
+		}
+	}
+
+	.form-main{
+		.p(x,94px/2);.clip;.pr;.z(2);
+		.form-title{
+			.size(100%,68px/2);.pr;font-size: 14px;.bold;.indent(10px);line-height: 34px;
+			em{
+				.db;.ct(y,23px/2);.w(3px/2);.h(23px/2);
+				background:url(../images/ico/line.png) center top no-repeat;
+				background-size: 100% auto;
+			}
+		}
+		.form-input{
+			.size(100%,auto);.clip;
+			.input-wp{
+				border:1px solid #1063c8;.db;.p(x,10px);background-color: rgba(255,255,255,0.6);
+				.lh(20px);.p(y,5px);color:#000;.m(b,5px);
+				input{
+					border:0;background-color: transparent;.size(100%,20px);color:#000;cursor: text;
+					&::-webkit-input-placeholder{color:#000;}
+					&:-moz-placeholder{color:#000;}
+					&::-moz-placeholder{color:#000;}
+					&:-ms-input-placeholder{color:#000;}
+				}
+			}
+			.textarea-wp{
+				.h(126px/2);
+				 textarea{
+					.h(126px/2);border:0;background-color: transparent;.w(100%);color:#000;
+					&::-webkit-input-placeholder{color:#000;}
+					&:-moz-placeholder{color:#000;}
+					&::-moz-placeholder{color:#000;}
+					&:-ms-input-placeholder{color:#000;}
+				}
+			}
+		}
+	}
+	.form-btn{
+		.p(t,10px);.clip;.x;
+		.btn{
+			.dbi;.size(100%,40px);.fzlh(17px,40px);.x;.bgc(#3c83ff);.bold;color:#fff;
 		}
 	}
 }
